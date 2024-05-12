@@ -27,6 +27,10 @@ const Home = () => {
       link: '/learningbasics',
       title: "Basics"
     },
+    {
+      link: '/bottomsheet',
+      title: "sheet"
+    },
   ]
 
   return (
