@@ -137,11 +137,12 @@ const BottomSheet = ({ open, setOpen, children }) => {
             dragListener={false}
             className="sheet"
           >
-            <div className="header-sheet">
+            <div
+            onPointerDown={(e) => {
+                controls.start(e);
+              }}
+            className="header-sheet">
               <button
-                onPointerDown={(e) => {
-                  controls.start(e);
-                }}
                 className="drag"
               ></button>
             </div>
