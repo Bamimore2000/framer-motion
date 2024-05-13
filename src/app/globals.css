@@ -31,3 +31,60 @@ body{
 .home{
   background-color: rgb(199, 88, 121);
 }
+
+.bottomsheetparent{
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 60px);
+  
+}
+
+.show{
+  background-color: blueviolet;
+  color: white;
+  padding: 8px 16px;
+}
+
+.sheetwrapper{
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgb(13, 13, 13);
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+
+}
+
+.sheet{
+  height: 60vh;
+  bottom: 0;
+  position: fixed;
+  background-color: white;
+  color: black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 8px;
+  
+}
+
+.sheetitself{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.drag{
+  height: 7px;
+  width: 30px;
+  border-radius: 10px;
+  background-color: black;
+  transform: translateX(50%);
+  touch-action: none;
+
+}
+
+.header-sheet{
+  display: grid;
+  place-content: center;
+  height: 20px;
+}

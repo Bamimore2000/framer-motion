@@ -31,6 +31,10 @@ const Home = () => {
       link: '/bottomsheet',
       title: "sheet"
     },
+    {
+      link: '/mybottomsheet',
+      title: "mysheet"
+    },
   ]
 
   return (

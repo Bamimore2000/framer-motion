@@ -7,6 +7,7 @@ const BottomSheet = () => {
   const handleClick = () => {
     setOpen((prev) => !prev);
   };
+  const [swipe, setSwipe] = useState(0)
 
   return (
     // the parent container
@@ -102,14 +103,14 @@ const DragCloseDrawer = ({ open, setOpen, children }) => {
     // const [drawerRef, {height}] = useMeasure()
 
 
-  const handleClose =async () => {
+  const handleClose = () => {
     const yStart = typeof y.get() === 'number' ? y.get(): 0;
     // grab the current div associated with scope as ref, then animate it with the styles
     animate(scope.current, {
         opacity: [1, 0]
     })
-    await animate("#drawer", {
-        y: [yStart, 600]
+     animate("#drawer", {
+        y: [yStart, 500]
     })
     setOpen(false);
 
